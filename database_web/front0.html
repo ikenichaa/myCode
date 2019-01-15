@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>front</title>
+<link rel="stylesheet" href="default_cha2.css">
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="div_header">
+		<font color = 'white'>Daily Fitness</font>
+	</div>
+  <div id="div_subhead">
+  		<ul id="menu">
+  			<li><a href="login.html">Member Log In</a></li>
+        <li><a href="admin_login.html">Admin Log In</a></li>
+  			<li><a href="add_profile.html">Sign up</a></li>
+  			<li><a href="timetable.php">Courses</a></li>
+
+  		</ul>
+  	</div>
+  	<div id="div_main">
+      <br><br><br><br><br>
+
+
+      <div class="slideshow-container">
+
+
+
+      <div class="mySlides fade">
+
+        <img src="fit.jpg" style="width:1000px; height:600px">
+        <div class="text">JOGGING</div>
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="grandma.jpg" style="width:1000px; height:600px">
+        <div class="text">SWIMMING</div>
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="yoga.png" style="width:1000px; height:600px">
+        <div class="text">YOGA</div>
+      </div>
+      <!--
+      <div class="mySlides fade">
+
+        <img src="boxing.jpg" style="width:1000px; height:600px">
+        <div class="text">BOXING</div>
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="crossfit.jpg" style="width:1000px; height:600px">
+        <div class="text">CROSSFIT</div>
+      </div>
+
+-->
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+
+
+
+      <script src="dec.js">
+      </script>
+
+  		</div> <!-- end div_content -->
+
+  	</div> <!-- end div_main -->
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+</div>
+
+  </body>
+  </html>

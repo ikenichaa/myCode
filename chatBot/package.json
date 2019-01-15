@@ -1,0 +1,30 @@
+{
+  "name": "bot-tesa",
+  "version": "1.0.0",
+  "description": "demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linedevth/LINE-Bot-101-Node.git"
+  },
+  "keywords": [
+    "linebot",
+    "linechatbot"
+  ],
+  "author": "Jirawatee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linedevth/LINE-Bot-101-Node/issues"
+  },
+  "homepage": "https://github.com/linedevth/LINE-Bot-101-Node#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongojs": "^2.6.0",
+    "node-fetch": "^2.3.0",
+    "request": "^2.88.0"
+  }
+}

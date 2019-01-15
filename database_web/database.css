@@ -1,0 +1,604 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+div#head {
+  background-color: black;
+	min-width:100px;
+	/*box-shadow: 0px 0px 4px 4px lightgray;
+	/*fallback for browser not supporting shadow*/
+
+	/*Set top padding to 0.3em so we have little space at the top of the page*/
+
+  padding-bottom:  3.5em;
+	/*Set margin to auto*/
+	margin:auto;
+	/*Set width to 70%*/
+	width: 100%
+
+
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+h5 {
+  font: 120px/0.0001 'Great Vibes', Helvetica, sans-serif;
+  color: black;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+h22 {
+  font: 120px/0.0001 'Indie Flower', Helvetica, sans-serif;
+  color: white;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+  text-align: center;
+  margin-bottom: 100px;
+  text-shadow: black 0.1em 0.1em 0.4em
+}
+h23 {
+  font: 70px/0.0001 'Indie Flower', Helvetica, sans-serif;
+  color: white;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+  text-align: center;
+  margin-bottom: 100px;
+  text-shadow: black 0.1em 0.1em 0.8em
+}
+
+h9 {
+  font: 50 50px/1.2 'Merienda One', Helvetica, sans-serif;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+#wgt{
+  width: 50px;
+}
+/* Style inputs */
+input[type=text], textarea, input[type=password] {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+}
+
+.center {
+    margin: auto;
+    width: 100%;
+
+    padding: 10px;
+}
+/* Style the container/contact section
+.container {
+    border-radius: 5px;
+
+    padding: 10px;
+}
+*/
+
+.container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+
+/* Create two columns that float next to eachother */
+.column {
+    float: right;
+    background-color: #eeeedd;
+    width: 40%;
+    margin-top: 3%;
+    margin-right: 3%;
+    padding: 20px;
+}
+
+
+
+
+
+.col {
+
+    background-color: #eeeedd;
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 58%;
+    padding: 20px;
+}
+
+.mid {
+    float: left;
+    background-color: #eeeedd;
+    width: 80%;
+    margin-top: 3%;
+    margin-left: 10%;
+
+    padding: 20px;
+}
+
+
+.box{
+
+    float: left;
+    background-color: #ffcccc;
+    width: 20%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+
+    text-align: center;
+
+}
+
+.boxx{
+
+    float: left;
+    width: 20%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+    padding-bottom: 5px;
+    text-align: center;
+
+}
+
+.cartbox{
+
+    float: left;
+    background-color: black;
+    width: 10%;
+
+    margin-left: 3%;
+    margin-bottom: 3%;
+    padding-bottom: 5px;
+    text-align: center;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.space{
+
+  margin-left: 500px;
+}
+p.serifbold {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+p.serif {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+p.serifb {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+p.sserif {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.light {
+    /* The image used */
+    background-image: url("bg/lights.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("bg/basket.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bbb {
+    /* The image used */
+    background-image: url("bg/brown.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.bgg {
+    /* The image used */
+    background-image: url("bg/hom.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backg {
+    /* The image used */
+    background-image: url("bg/nut.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fruits {
+    /* The image used */
+    background-image: url("bg/fruits.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.cc {
+    /* The image used */
+    background-image: url("bg/bread-board.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.del {
+    /* The image used */
+    background-image: url("bg/christmas.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    /*background-position: center;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#signin{
+  width: 100%;
+  align: center;
+}
+
+.ibutton {
+    display: inline-block;
+    height: 50px;
+
+    vertical-align: text-top;
+    width: 50px;
+
+}
+
+.cbutton {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+
+}
+ .right{
+   float: right;
+ }
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.cart {
+  background: url(food/shop.png);
+  width: 50px;
+  height: 50px;
+}
+
+
+#close-image img {
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+#close-imagec img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    vertical-align: baseline;
+}
+
+.topnav {
+
+  background-color: #000000;
+}
+
+.topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.cart_right{
+  float: right;
+  margin-bottom: -20px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: black;
+}
+
+.topnav-right {
+  float: right;
+
+}
+
+.topnav-left{
+  float: left;
+
+}
+
+.middle1 {
+  float: left;
+  background-color: pink;
+  color: black;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  text-decoration: none;
+
+}
+
+.dropbtn {
+    background-color: Black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: white;color: black;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: white; color: black;}
+
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: 350px;
+}
+.hvrboxMainCourse{
+    height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 73%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.hvrbox .hvrbox-layer_topp {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 85%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+
+.hvrbox:hover .hvrbox-layer_topp,
+.hvrbox.active .hvrbox-layer_topp {
+	opacity: 1;
+}
+
+
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+
+/* name */
+.name{
+    position:absolute;
+    top:60px;
+    right:10px;
+    font-size: 40px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-shadow: 10px 20px 30px #f7a99a;
+    /* text-shadoe: right bottom blur color*/
+}
+.name > h1> a{
+    color: white;
+    text-decoration: none;
+    position:absolute;
+    top:10px;
+    right:20px;
+}
+.sup{
+    position:absolute;
+    top:200px;
+    right:200px;
+    font-size: 50px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-shadow: 10px 20px 30px #f7a99a;
+    /* text-shadoe: right bottom blur color*/
+}
+.sup > h1> a{
+    color: white;
+    text-decoration: none;
+}
